@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.x
+
+os:
+    - linux
+    - osx
+    - window
+
+script: 
+    - cd cmd_client && go run start_client.go
+    - cd cmd_server && go run start_server.go
