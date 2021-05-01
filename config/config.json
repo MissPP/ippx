@@ -1,0 +1,13 @@
+{
+  "OpenSocksProxy": true,
+  "KeepAlive": false,
+  "KeepAliveTimeout": 600,
+  "IsEncrypted": false,
+  "MaxPoolConn": 512,
+  "ServerPort": "7555",
+  "ServerHost": "127.0.0.1",
+  "ClientPort": "7554",
+  "Username": "user",
+  "Password": "pwd"
+}
+
