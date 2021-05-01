@@ -60,22 +60,19 @@ set your server and client address in the file
 ## Example
 1. OpenSocksProxy:
 server socks protocol
-
-
+```
     curl -x socks5://user:pwd@127.0.0.1:7555 yourdomain.com
-
+```
 your client (You can think of it as a secondary proxy)
- 
-
+ ```
     curl -x 127.0.0.1:7554 yourdomain.com
- 
+ ```
 2. CloseSocksProxy: just traffic forwarding
-
-
+```
     curl -x 127.0.0.1:7555 yourdomain.com
-     
+```
 3. Please see the `ippx/_example`for the socks5 request by golang
 
 # License
 
-ippx is released under the Apache 2.0 license. See [LICENSE.txt](https://github.com//missxpp/ippx/LICENSE.txt)
+ippx is released under the Apache 2.0 license. See [LICENSE.txt](https://github.com/MissPP/ippx/LICENSE)
