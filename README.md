@@ -66,7 +66,7 @@ server socks protocol
 ```
 curl -x socks5://user:pwd@127.0.0.1:7555 yourdomain.com
 ```
- --- your client (You can think of it as a secondary proxy)
+ -- your client (You can think of it as a secondary proxy)
 ```
 curl -x 127.0.0.1:7554 yourdomain.com
  ```
