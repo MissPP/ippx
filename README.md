@@ -5,7 +5,7 @@
 
 # Introduction
 
-ippx is a tunnel proxy which can help you get through intranet or  firewalls.
+ippx is a tunnel proxy which can help you get through intranet. So you can work at home now !
 
 # Overview
  
