@@ -74,7 +74,7 @@ curl -x 127.0.0.1:7554 yourdomain.com
 ```
 curl -x 127.0.0.1:7555 yourdomain.com
 ```
-3. Please see the `ippx/_example`for the socks5 request by golang
+3. Please see the `ippx/_example`for the socks5 request by golang ( you may need `go mod tidy` )
 
 # License
 
