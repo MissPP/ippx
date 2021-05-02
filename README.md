@@ -1,8 +1,11 @@
+## ippx proxy
 
-ippx is a tunnel proxy which can help you get through intranet in your company or  firewalls.
+[![Build Status](https://travis-ci.com/MissPP/ippx.svg?branch=main)](https://travis-ci.com/MissPP/ippx)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+# Introduction
 
-
+ippx is a tunnel proxy which can help you get through intranet or  firewalls.
 
 # Overview
  
@@ -36,7 +39,7 @@ set your server and client address in the file
 
 
 # Getting Started
-**In your client**
+**In your server**
 ```
   ▾ ippx/
     ▾ cmd_server/
@@ -63,8 +66,8 @@ server socks protocol
 ```
 curl -x socks5://user:pwd@127.0.0.1:7555 yourdomain.com
 ```
-your client (You can think of it as a secondary proxy)
- ```
+ ---- your client (You can think of it as a secondary proxy)
+```
 curl -x 127.0.0.1:7554 yourdomain.com
  ```
 2. CloseSocksProxy: just traffic forwarding
