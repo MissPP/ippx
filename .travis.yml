@@ -11,5 +11,5 @@ os:
 install: true
 
 script: 
-    - cd cmd_client && go run start_client.go
-    - cd cmd_server && go run start_server.go
+    - cd cmd_client && go build start_client.go
+    - cd cmd_server && go build start_server.go
