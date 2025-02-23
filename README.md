@@ -14,7 +14,7 @@ Currently, ippx supports the TCP protocol, with an option to choose SOCKS5 for c
 Please note that at this time, UDP and IPv6 are not supported.
 
 This project is intended strictly for technical research purposes. Users are advised to employ this tool responsibly and in compliance with applicable laws. The author disclaims any liability for misuse or unlawful actions.
-* For technical research purposes only. Please use this project responsibly and in accordance with the law. The author will not be held liable for any consequences arising from misuse.
+*For technical research purposes only. Please use this project responsibly and in accordance with the law. The author will not be held liable for any consequences arising from misuse.
  
  
 
@@ -56,9 +56,9 @@ set your server and client address in the file
 
     go run start_client.go
 
-* Ensure that the ulimit does not impose any restrictions on the calling process.
+*Ensure that the ulimit does not impose any restrictions on the calling process.
 
-* If necessary, simply start the servers.
+*If necessary, simply start the servers.
 
  
 ## Example
