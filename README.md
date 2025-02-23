@@ -5,15 +5,16 @@
 
 # Introduction
 
-ippx is a tunnel proxy which can help you get through intranet. So you can work at home now !
+ippx is a sophisticated tunneling proxy designed to facilitate seamless access to restricted networks, enabling you to work from virtually anywhere—whether you're at home or on the go.
 
 # Overview
  
- ippx now support tcp protocol ,also you can choose the socks5 protocol and start your client with a connection pool based on tcp
- had to set the username and password when you use socks protocol 
- 
- doesn't support udp and ip6 for now  
-* For technical research only, please use this project reasonably and legally, otherwise the author will not be responsible for the consequences
+Currently, ippx supports the TCP protocol, with an option to choose SOCKS5 for clients. When utilizing the SOCKS5 protocol, you may configure a connection pool based on TCP, which requires setting up a username and password for access.
+
+Please note that at this time, UDP and IPv6 are not supported.
+
+This project is intended strictly for technical research purposes. Users are advised to employ this tool responsibly and in compliance with applicable laws. The author disclaims any liability for misuse or unlawful actions.
+* For technical research purposes only. Please use this project responsibly and in accordance with the law. The author will not be held liable for any consequences arising from misuse.
  
  
 
@@ -55,9 +56,9 @@ set your server and client address in the file
 
     go run start_client.go
 
-* Make sure the ulimit will not  set some limit for the calling process
+* Ensure that the ulimit does not impose any restrictions on the calling process.
 
-* If you need to, just start the servers
+* If necessary, simply start the servers.
 
  
 ## Example
@@ -66,7 +67,7 @@ server socks protocol
 ```
 curl -x socks5://user:pwd@127.0.0.1:7555 yourdomain.com
 ```
- -- your client (You can think of it as a secondary proxy)
+ -- your client (You can consider it as a secondary proxy)
 ```
 curl -x 127.0.0.1:7554 yourdomain.com
  ```
@@ -74,7 +75,7 @@ curl -x 127.0.0.1:7554 yourdomain.com
 ```
 curl -x 127.0.0.1:7555 yourdomain.com
 ```
-3. Please see the `ippx/_example`for the socks5 request by golang ( you may need `go mod tidy` )
+3. Please refer to ippx/_example for the SOCKS5 request example in Golang (you may need to run go mod tidy).
 
 # License
 
